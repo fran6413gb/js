@@ -275,8 +275,34 @@ else if (averageMike > averageJohn && averageMike > averageMary){
 	console.log('The winner is Marys team with an average of : '+averageMary);
 }
 */
+//Function declaration
 
-//Functions
+//function whatDoYouDo(job, first name){
+
+//}
+
+//Functions expressions
+
+var whatDoYouDo = function (job, firstName){
+	switch(job){
+		case 'teacher':
+			return firstName + ' teaches kids how to code';
+		//break no es necesario por el return
+		case 'driver':
+			return firstName + ' drives a cab in Lisbon.';
+		case 'designer':
+			return firstName + ' design beautiful websites.';
+		default:
+			return firstName + ' does something else';
+	}
+}
+console.log(whatDoYouDo('teacher', 'Francisco'));
+console.log(whatDoYouDo('retired', 'Mark'));
+console.log(whatDoYouDo('driver', 'John'));
+
+
+
+
 
 
 
